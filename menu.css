@@ -1,0 +1,46 @@
+#desk-info {
+    background: #17a2b8;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.menu-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.new-order-form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.new-order-form button {
+    width: 100%;
+}
+
+.order-confirmation {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    display: none;
+}
+
+.order-confirmation h2 {
+    color: #27ae60;
+    margin-bottom: 15px;
+}
+
+.order-confirmation p {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.order-confirmation button {
+    margin-top: 15px;
+}
