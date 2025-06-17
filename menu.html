@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Złóż Zamówienie</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Złóż Zamówienie</h1>
+            <div id="desk-info">Stolik: <span id="desk-number">-</span></div>
+        </header>
+
+        <div class="menu-container">
+            <div class="new-order-form">
+                <h2>Nowe Zamówienie</h2>
+                <input type="text" id="customer-name" placeholder="Twoje imię">
+                <textarea id="order-details" placeholder="Szczegóły zamówienia"></textarea>
+                <button id="submit-order">Złóż Zamówienie</button>
+            </div>
+            
+            <div class="order-confirmation" id="order-confirmation">
+                <h2>Zamówienie Przyjęte!</h2>
+                <p>Twoje zamówienie zostało przekazane do realizacji.</p>
+                <p>Numer zamówienia: <span id="confirmation-order-id"></span></p>
+                <button id="new-order-btn">Nowe Zamówienie</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="menu.js"></script>
+</body>
+</html>
