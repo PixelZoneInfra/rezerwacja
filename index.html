@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Zarządzania Zamówieniami</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="panel.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Panel Zarządzania Zamówieniami</h1>
+            <div class="stats">
+                <span id="total-orders">Zamówienia: 0</span>
+                <span id="pending-orders">Oczekujące: 0</span>
+            </div>
+        </header>
+
+        <div class="orders-container">
+            <div class="orders-queue">
+                <h2>Kolejka Zamówień</h2>
+                <div id="orders-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="alert-overlay" class="alert-overlay"></div>
+    
+    <script src="script.js"></script>
+    <script src="panel.js"></script>
+</body>
+</html>
