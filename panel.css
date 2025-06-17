@@ -1,0 +1,105 @@
+.stats {
+    display: flex;
+    gap: 20px;
+}
+
+.orders-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.orders-queue {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.order-item {
+    background: #f8f9fa;
+    border: 2px solid #dee2e6;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.order-item:hover {
+    background: #e9ecef;
+    border-color: #adb5bd;
+}
+
+.order-item.completed {
+    background: #d4edda;
+    border-color: #c3e6cb;
+    opacity: 0.7;
+}
+
+.order-item.overdue {
+    background: #f8d7da;
+    border-color: #f5c6cb;
+    animation: pulse 2s infinite;
+}
+
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.order-id {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.order-time {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.customer-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.order-details {
+    color: #495057;
+    margin-bottom: 10px;
+}
+
+.desk-number {
+    display: inline-block;
+    padding: 3px 8px;
+    background: #17a2b8;
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.order-status {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.status-pending {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.status-completed {
+    background: #d4edda;
+    color: #155724;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+}
